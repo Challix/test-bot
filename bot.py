@@ -60,4 +60,4 @@ async def user(ctx):
     await ctx.send('user ID: @everyone')
 
 
-bot.run('ODIxODUxODY5Mzc4NjQxOTIw.YFJvMg.Qmw2fgtHj_kK_Tb2lvtwPDLJPyg')
+bot.run(process.env.BOT_TOKEN)
