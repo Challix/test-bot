@@ -4,6 +4,7 @@
 import discord
 from discord.ext import commands
 import random
+import os
 
 # bot = discord.Client()
 bot = commands.Bot(command_prefix=".")
@@ -60,4 +61,4 @@ async def user(ctx):
     await ctx.send('user ID: @everyone')
 
 
-bot.run(process.env.BOT_TOKEN)
+bot.run(os.environ.get('BOT_TOKEN'))
